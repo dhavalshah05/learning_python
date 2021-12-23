@@ -1,4 +1,5 @@
 from management import StudentManagement
+from printer import Printer
 
 student_management = StudentManagement()
 
@@ -20,7 +21,9 @@ while not student_management.exit:
         student_management.stop()
 
     elif user_choice == 2:
-        student_management.print_student_details()
+        students = student_management.get_students()
+        printer = Printer()
+        printer.print_student_details(students)
 
     elif user_choice == 1:
         name = input("Enter student name: ")
@@ -30,8 +33,9 @@ while not student_management.exit:
     elif user_choice == 3:
         course_name = input("Enter course name: ")
         students = student_management.find_students_for_course(course_name=course_name)
-        for student in students:
-            print(f"Name: {student.name}")
+        printer = Printer()
+        printer.print_student_details(students)
+
 
     else:
         print(f"Invalid Input")

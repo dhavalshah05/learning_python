@@ -1,5 +1,3 @@
-from beautifultable import BeautifulTable
-
 from student import Student
 
 
@@ -13,12 +11,8 @@ class StudentManagement:
             Student(name="Rutul", course_name="Android"),
         ]
 
-    def print_student_details(self):
-        table = BeautifulTable()
-        table.columns.header = ["Name", "Course Name"]
-        for student in self.students:
-            table.rows.append([student.name, student.course_name])
-        print(table)
+    def get_students(self) -> list[Student]:
+        return self.students
 
     def add_student(self, name, course_name):
         self.students.append(Student(name=name, course_name=course_name))
