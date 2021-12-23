@@ -1,18 +1,42 @@
-should_run = True
-students = [
-    {
-        'name': 'Dhaval',
-        'course_name': 'Android'
-    },
-    {
-        'name': 'Jay',
-        'course_name': 'Android'
-    },
-    {
-        'name': 'Niral',
-        'course_name': 'Android'
-    }
-]
+from beautifultable import BeautifulTable
+
+
+class Student:
+
+    def __init__(self, name, course_name):
+        self.name = name
+        self.course_name = course_name
+
+
+class StudentManagement:
+
+    def __init__(self):
+        self.exit = False
+        self.students = [
+            Student(name="Dhaval", course_name="Android"),
+            Student(name="Niral", course_name="Python"),
+            Student(name="Rutul", course_name="Android"),
+        ]
+
+    def print_student_details(self):
+        table = BeautifulTable()
+        table.columns.header = ["Name", "Course Name"]
+        for student in self.students:
+            table.rows.append([student.name, student.course_name])
+        print(table)
+
+    def add_student(self, name, course_name):
+        self.students.append(Student(name=name, course_name=course_name))
+
+    def find_students_for_course(self, course_name):
+        return filter(lambda student: student.course_name == course_name, self.students)
+
+    def stop(self):
+        self.exit = True
+
+
+# Start Here
+student_management = StudentManagement()
 
 
 def print_menu():
@@ -28,40 +52,27 @@ def get_user_choice() -> int:
     return int(input("Select an option: "))
 
 
-def show_student_details():
-    for student in students:
-        print(f"Name: {student['name']}, Course Name: {student['course_name']}")
-
-
 def add_new_student():
-    student_name = input("Enter student name: ")
+    name = input("Enter student name: ")
     course_name = input("Course name: ")
-    students.append({
-        "name": student_name,
-        "course_name": course_name
-    })
-
-
-def is_student_part_of_course(student, course) -> bool:
-    return student['course_name'] == course
+    student_management.add_student(name=name, course_name=course_name)
 
 
 def find_student_for_course():
     course_name = input("Enter course name: ")
-    filtered_students = filter(lambda student: is_student_part_of_course(student, course_name), students)
+    students = student_management.find_students_for_course(course_name=course_name)
+    for student in students:
+        print(f"Name: {student.name}")
 
-    for student in filtered_students:
-        print(f"Name: {student['name']}")
 
-
-while should_run:
+while not student_management.exit:
     print_menu()
     user_choice = get_user_choice()
 
     if user_choice == 0:
-        should_run = False
+        student_management.stop()
     elif user_choice == 2:
-        show_student_details()
+        student_management.print_student_details()
     elif user_choice == 1:
         add_new_student()
     elif user_choice == 3:
