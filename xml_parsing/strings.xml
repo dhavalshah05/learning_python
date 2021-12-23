@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Sockerfritt</string>
+
+    <!--region Splash-->
+    <string name="label_app_name">@string/app_name</string>
+    <string name="label_tagline">Less sugar, more love</string>
+    <!--endregion Splash-->
+
+    <!--region Home-->
+    <string name="hint_search_by_name_or_ingredient">Search by ingredient, name and more</string>
+    <string name="label_home_title">Fika Hemma</string>
+    <string name="label_on_the_go_title">Ta med</string>
+    <string name="label_most_popular">Most Popular</string>
+    <string name="label_quick_and_easy">Quick And Easy</string>
+    <string name="label_kids_can_help">Kids Can Help</string>
+    <string name="label_ingredients_added_to_shopping_list">Added to list</string>
+    <string name="label_everyone_favourite">Allas favorit</string>
+    <string name="label_easiest">Easiest</string>
+    <string name="label_premium">Premium</string>
+    <!--endregion Home-->
+
+    <!--region Screen Title-->
+    <string name="screen_title_favorite">Favorite</string>
+    <string name="screen_title_shopping_list">Shopping List</string>
+    <!--endregion Screen Title-->
+
+    <!--region Recipe Detail-->
+    <string name="label_time_left">Time Left</string>
+    <string name="tab_about">About</string>
+    <string name="tab_ingredients">Ingredients</string>
+    <string name="tab_directions">Directions</string>
+    <string name="tab_storage">Storage</string>
+    <string name="tab_use">Serve</string>
+    <string name="tab_storage_and_serve">Storage And Serve</string>
+    <string name="label_serving">Serving</string>
+    <string name="label_prep_time">Prep</string>
+    <string name="label_serves">Serves</string>
+    <string name="label_favorite">Mark as favorite</string>
+    <string name="label_add_to_shopping_list">Add to shopping list</string>
+
+    <string name="lbl_min_short_string">%d min</string>
+    <string name="lbl_hr_short_string">%d h</string>
+    <string name="lbl_hr_min_short_string">%d h %d min</string>
+    <string name="label_ingredients_count">%s ingredienser</string>
+    <string name="label_sugar_count">%s g socker</string>
+
+    <string name="label_chill_time">Chill</string>
+    <string name="label_cook_time">Cook</string>
+
+    <string name="label_add_to_favourite">Save to favorite</string>
+    <string name="label_remove_from_favourite">Remove from favorite</string>
+    <string name="label_recipe_detail_title_count">%1$s of %2$s recipes</string>
+    <string name="screen_title_nutrition_detail">Nutrients Information</string>
+    <!--endregion Recipe Detail-->
+
+    <!--region Shopping List-->
+    <string name="button_add">Add</string>
+    <string name="button_list">Se listan</string>
+    <string name="button_delete_items">Delete Items</string>
+    <string name="button_delete_all">Delete All</string>
+    <string name="button_recipe">Recipes</string>
+    <string name="label_frequently_bought_items">Frequently bought items:</string>
+    <string name="hint_add_items_here">Enter item here</string>
+    <string name="button_edit">Edit</string>
+    <string name="label_in_my_shopping_list">In My Shopping List</string>
+    <string name="label_delete_items">Do you want to delete\nitems?</string>
+    <string name="button_delete">Delete</string>
+    <string name="label_empty_list">Your list is empty</string>
+    <string name="label_mark_items_to_delete">Delete selected items</string>
+    <string name="label_empty_the_whole_list">Delete whole list</string>
+    <string name="label_see_recipes_in_list">Recipes in the list</string>
+    <string name="label_clear_purchased_items">Delete purchased items</string>
+    <string name="label_recipe_deleted_from_shopping_list">Recipe deleted from shopping list</string>
+    <string name="label_shopping_list_items_deleted_success">Items deleted</string>
+    <string name="label_shopping_list_item_deleted_success">Item deleted</string>
+    <string name="label_shopping_list_item_added">Items added</string>
+    <string name="label_shopping_list_item_updated">Item updated</string>
+
+    <string name="screen_title_add_shopping_list_item">Add Item</string>
+    <string name="screen_title_edit_shopping_list_item">Edit Item</string>
+    <string name="button_add_item">Add Item</string>
+    <string name="button_update">Update</string>
+
+    <string name="button_close">Close</string>
+    <string name="button_save">Save</string>
+    <!--endregion Shopping List-->
+
+    <!--region Main Screen-->
+    <string name="navigation_title_at_home">At Home</string>
+    <string name="navigation_title_on_the_go">On The Go</string>
+    <string name="navigation_title_favorite">Favorite</string>
+    <string name="navigation_title_shopping_list">Shopping List</string>
+    <!--endregion Main Screen-->
+
+    <!--region Validations-->
+    <string name="validation_no_ingredients">This recipe does not have any ingredients</string>
+    <string name="validation_select_aisle">Please select aisle category</string>
+    <string name="validation_enter_item_name">Please enter item name</string>
+    <!--endregion Validations-->
+
+    <!--region Delete Dialog-->
+    <string name="dialog_delete_message">Are you sure you want to delete?</string>
+    <string name="dialog_delete_message_purchased_items">Are you sure you want to delete purchased items?</string>
+    <string name="dialog_button_yes">Yes</string>
+    <string name="dialog_button_no">No</string>
+    <!--endregion Delete Dialog-->
+
+    <!--region Dummy-->
+    <string name="dummy_recipe_name">Almond Cocoa Cookies</string>
+    <!--endregion Dummy-->
+
+    <!--Nav Drawer-->
+    <string name="label_drawer_item_home">Home</string>
+    <string name="label_drawer_item_faq">FAQ</string>
+    <string name="label_drawer_item_recommend_to_friend">Recommend to a friend</string>
+    <string name="label_drawer_item_about_us">About us</string>
+    <string name="button_unlock_all_recipes">Unlock all recipes</string>
+
+    <!--Dialog Purchase Premium Recipe-->
+    <string name="message_dialog_purchase_all_recipe">This is a premium recipe. Please purchase the premium version of Sugarfree to access all recipes</string>
+    <string name="button_get_gold">Get the Gold!</string>
+    <string name="benefit_1">Over 120 absolutely delicious sugar free recipes.</string>
+    <string name="benefit_2">Save money: learn to combine natural sweeteners in smart ways to make sugarfree sweets much cheaper.</string>
+    <string name="benefit_3">Proven results: lose weight and help your body keep the weight off in the long run.</string>
+    <string name="benefit_4">Your health: swap your usual sweets for any delicious recipe in the app and your brain and body will be protected from the terrible damage that too much sugar exerst on them.</string>
+
+</resources>
